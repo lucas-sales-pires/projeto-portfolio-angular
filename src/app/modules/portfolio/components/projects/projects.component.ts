@@ -1,15 +1,11 @@
 import { Component, inject, signal } from '@angular/core';
 
-// Interface
 import { interfaceProjetos } from '../../interface/IProjects.interface';
 
-// Material
 import { MatDialog, MatDialogModule } from '@angular/material/dialog';
 
-// Enum
 import { EDialogPanelClass } from '../../enum/EDialogPanelClass.enum';
 
-// Dialog
 import { DialogProjectsComponent } from '../dialog/dialog-projects/dialog-projects.component';
 
 @Component({
@@ -79,7 +75,7 @@ export class ProjectsComponent {
       links: [
         {
           name: 'Conheça o projeto Telecall',
-          href: 'https://github.com/lucas-sales-pires/Projetos/tree/projetos/projeto-faculdade',
+          href: 'https://github.com/lucas-sales-pires/projeto-telecall',
         },
       ],
     },
@@ -128,6 +124,21 @@ export class ProjectsComponent {
         },
       ],
     },
+    {
+      src: 'assets/img/projects/API.png',
+      alt: 'Projeto Api Completa',
+      title: 'Api Completa',
+      with: '100px',
+      height: '100px',
+      description:
+        '<p>Este é um projeto de API REST completa desenvolvida com Node.js, TypeScript e MongoDB, seguindo os princípios SOLID e utilizando o padrão de arquitetura MVC.</p>',
+      links: [
+        {
+          name: 'Conheça o projeto Api Completa',
+          href: 'https://projeto-api-completa.onrender.com/usuarios', 
+        },
+      ],
+    }
   ]);
 
   public openDialog(data: interfaceProjetos) {
